@@ -17,15 +17,12 @@ nav{
     background: linear-gradient(to top,rgb(240, 9, 9),rgb(113, 107, 201),rgb(56, 8, 233));
     color: white;
 }
-.rgb:hover{
-    background: linear-gradient(to top,rgb(17, 0, 255),rgb(230, 90, 188),rgb(164, 50, 192),rgb(255, 0, 64));
-    color: white !important;
-}
 .ovelow{
     width: 100%;
     bottom: -100%;
     position: absolute;
     opacity: 70%;
+    padding: 50px !important;
     transition: all 0.4s ease !important;
 }
 .ddd:hover .ovelow{
@@ -84,9 +81,35 @@ input ,textarea{
     nav{
         padding: 0px 50px !important;
     }
+    .rgb:hover{
+        background: linear-gradient(to top,rgb(17, 0, 255),rgb(230, 90, 188),rgb(164, 50, 192),rgb(255, 0, 64));
+        color: white !important;
+    }
 }
 @media screen and (max-width:420px) {
     nav{
         padding: 0px 4px !important;
+    }
+    .ddd img{
+        height: 300px;
+    }
+}
+@media screen and (max-width:420px) {
+    nav{
+        padding: 0px 4px !important;
+    }
+    .ovelow{
+        padding: 10px 20px !important;
+    }
+}
+@media screen and (max-width:1000px) {
+    .order1{
+        order: 2;
+    }
+    .order1 div{
+        text-align: start !important;
+    }
+    .order{
+        order: 1;
     }
 }
